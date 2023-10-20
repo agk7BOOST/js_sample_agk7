@@ -110,7 +110,8 @@ function calcPostageFromPurchase(sum) {
   if (sum == 0 || sum >= 3000) {
     return 0;
   } else if (sum < 1000){
-   return 500;s
+   return 500;
   } else {
+    return 250;
   }
 }
