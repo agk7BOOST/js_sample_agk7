@@ -30,15 +30,15 @@ function add() {
   let nameElement, id;
 switch (price) {
   case 500:
-    nameElement= "Original Mix 200g"
+    nameElement="Original Mix 200g"
     id=0
     break;
     case 900:
-    nameElement= "Original Mix 500g"
+    nameElement="Original Mix 500g"
     id=1
     break;
     case 700:
-    nameElement= "Special Mix 200g"
+    nameElement="Special Mix 200g"
     id=2
     break;
     case 1200:
@@ -85,7 +85,6 @@ function calc() {
   const sum = subtotal();
   const postage = calcPostageFromPurchase(sum);
   window.alert(`${xd()}
-
 Subtotal por productos :${sum}yenes
 Los gastos de envío son: ${postage} yenes. 
 Total: ${sum + postage} yenes`);
@@ -101,7 +100,7 @@ function xd(){
   for (let x= 0; x < items.length; x++) { 
   if(items[x].quantity!=0){
    result += `${items[x].nombre} x${items[x].quantity}
-  `;
+`;
   } 
 }  
 return result;
